@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公職人事行政｜全方位資源整合網</title>
+    <style>
+        :root {
+            --primary: #FF6B6B; /* 鮮豔的珊瑚紅 */
+            --secondary: #4ECDC4; /* 明亮的薄荷綠 */
+            --dark: #1A2980; /* 專業的深藍 */
+            --light: #F7F9F9;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--dark), #26D0CE);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subscribe-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 20px auto;
+            border: 2px solid var(--secondary);
+        }
+        .subscribe-box input[type="email"] {
+            padding: 12px;
+            width: 60%;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .subscribe-box button {
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .subscribe-box button:hover {
+            background-color: #ff5252;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--secondary);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            color: var(--dark);
+            font-size: 1.4rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 10px;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card li {
+            margin-bottom: 10px;
+        }
+        .card a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: 500;
+        }
+        .card a:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎯 高普考人事行政｜資源與法規整合網</h1>
+    <p>匯集考試院法規、司法實務見解、學術期刊與社群資源的單一入口</p>
+    
+    <div class="subscribe-box">
+        <h3>📩 訂閱最新考情與法規異動通知</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 15px;">輸入您的 Gmail，有最新法規修正或實務見解將自動發信通知您</p>
+        <form action="#" method="POST">
+            <input type="email" placeholder="example@gmail.com" required>
+            <button type="submit">立即訂閱</button>
+        </form>
+    </div>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <!-- 模組一：官方與法規 -->
+        <div class="card" style="border-top-color: #FF6B6B;">
+            <h2>🏛️ 官方機關與法規</h2>
+            <ul>
+                <li><a href="#">考試院 / 考選部 / 銓敘部 / 保訓會</a></li>
+                <li><a href="#">行政院人事行政總處</a></li>
+                <li><a href="#">全國法規資料庫 & 立法院法律系統</a></li>
+                <li><a href="#">憲法法庭大法官解釋與判決</a></li>
+                <li><a href="#">最高行政法院（大法庭/聯席會議）</a></li>
+            </ul>
+        </div>
+
+        <!-- 模組二：學術與期刊 -->
+        <div class="card" style="border-top-color: #4ECDC4;">
+            <h2>📚 學術期刊與研究</h2>
+            <ul>
+                <li><a href="#">文官制度季刊 & 國家人力資源論壇</a></li>
+                <li><a href="#">政大/臺北大學/東吳 相關學報</a></li>
+                <li><a href="#">考銓研究報告 & 出國報告</a></li>
+                <li><a href="#">CPAA 中華民國公共行政學會論文</a></li>
+            </ul>
+        </div>
+
+        <!-- 模組三：實戰與補習 -->
+        <div class="card" style="border-top-color: #FFD93D;">
+            <h2>✏️ 考試實戰與題庫</h2>
+            <ul>
+                <li><a href="#">考選部考畢試題查詢平臺</a></li>
+                <li><a href="#">阿摩線上測驗 / 公職王歷屆試題</a></li>
+                <li><a href="#">思法人 / 高點 / 讀享數位文化</a></li>
+            </ul>
+        </div>
+
+        <!-- 模組四：社群與自媒體 -->
+        <div class="card" style="border-top-color: #6C5CE7;">
+            <h2>💬 社群交流與新媒體</h2>
+            <ul>
+                <li><a href="#">何昀峯-HOHOHO公務人事尬聊</a></li>
+                <li><a href="#">IG/Threads (ho_yunfeng 等)</a></li>
+                <li><a href="#">Dcard 公職版 / PTT 國考版</a></li>
+                <li><a href="#">skyman人事補給站</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
